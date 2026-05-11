@@ -1,0 +1,13 @@
+# Ignore generated binary executable
+/library-api
+
+# Ignore SQLite database files
+*.db
+
+# Ignore local environment overrides
+.env
+
+# Optional build artifacts
+*.exe
+*.out
+*.log
