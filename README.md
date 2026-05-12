@@ -34,6 +34,15 @@ curl -X POST http://localhost:8080/books \
 Список книг:
 curl http://localhost:8080/books
 
+Список книг (вторая страница, 5 книг на странице):
+curl "http://localhost:8080/books?page=2&limit=5"
+
+Книги автора "Пушкин":
+curl "http://localhost:8080/books?author=Пушкин"
+
+Книги в наличии:
+curl "http://localhost:8080/books?status=Available"
+
 Зарегистрировать пользователя:
 curl -X POST http://localhost:8080/users \
   -H "Content-Type: application/json" \
